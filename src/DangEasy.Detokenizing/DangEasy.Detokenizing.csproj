@@ -1,25 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;netstandard2.0;net45;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net46;</TargetFrameworks>
+    <!--<PackOnBuild>true</PackOnBuild>-->
     <Authors>Anthony Dang</Authors>
     <Description>A simple detokenizer. Accepts a model or a dictionary. Useful for detokenizing email templates.
  </Description>
     <PackageId>DangEasy.Detokenizing</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
-    <Copyright>Anthony Dang</Copyright>
+    <Copyright>Anthony Dang 2019</Copyright>
     <PackageLicenseUrl>https://github.com/anthonydotnet/dangeasy-tokenizing/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Anthony Dang</Owners>
     <PackageProjectUrl>https://github.com/anthonydotnet/dangeasy-tokenizing</PackageProjectUrl>
     <Summary>A simple detokenizer. Accepts a model or a dictionary. </Summary>
-    <PackageTags>detokenize, detokenizing</PackageTags>
+    <PackageTags>Detokenize, Detokenizing, Email, String Template</PackageTags>
     <Title>DangEasy.Detokenizing</Title>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Reflection\ReflectionHelper.cs" />
-  </ItemGroup>
+ 
+  <Target Name="_GetBuildOutputFilesWithTfm">
+  </Target>
+  <Target Name="_GetTfmSpecificContentForPackage">
+  </Target>
+  <Target Name="_GetDebugSymbolsWithTfm">
+  </Target>
+  <Target Name="_GetFrameworkAssemblyReferences">
+  </Target>
+  <Target Name="_GetFrameworksWithSuppressedDependencies">
+  </Target>
 </Project>

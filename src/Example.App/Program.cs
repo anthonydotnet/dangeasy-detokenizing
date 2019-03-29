@@ -1,22 +1,11 @@
-# DangEasy-DeTokenizing
+﻿using DangEasy.Detokenizing;
+using System;
+using System.Collections.Generic;
 
-An simple library in dotnet standard 2.0 and framework 4.6 to detokenize strings. 
-
-Pass it a model or a dictionary. Very useful for detokenizing email templates.
-
-
-# Installation
-
-Use NuGet to install the [package](https://www.nuget.org/packages/DangEasy.Detokenizing/).
-
-```
-PM> Install-Package DangEasy.Detokenizing
-```
-
-
-
-## Example
-```
+namespace Example.App
+{
+    class Program
+    {
         static void Main(string[] args)
         {
             string tokenEnd = "%"; // must be on both sides of the item to detokenize
@@ -49,6 +38,7 @@ PM> Install-Package DangEasy.Detokenizing
             Console.WriteLine();
 
 
+
             // using dictionary with explicit token as part of dictionary items
             Console.WriteLine("Using dictionary with explicit token as part of dictionary items");
             dictionary = new Dictionary<string, string>
@@ -61,7 +51,19 @@ PM> Install-Package DangEasy.Detokenizing
             result = Detokenizer.Detokenize(dictionary, template);
             Console.WriteLine(result);
 
+
             Console.ReadLine();
         }
     }
-```
+
+
+
+    class CustomModel
+    {
+        public string FirstName { get; set; }
+
+        public int Age { get; set; }
+
+        public DateTime Created { get; set; }
+    }
+}

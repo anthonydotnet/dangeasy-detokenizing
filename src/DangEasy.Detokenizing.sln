@@ -1,9 +1,14 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DangEasy.Detokenizing", "DangEasy.Detokenizing\DangEasy.Detokenizing.csproj", "{2FB3FF69-09C9-4E45-BE80-5C49698BF8FF}"
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DangEasy.Detokenizing", "DangEasy.Detokenizing\DangEasy.Detokenizing.csproj", "{2FB3FF69-09C9-4E45-BE80-5C49698BF8FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DangEasy.Detokenizing.Test", "DangEasy.Detokenizing.Test\DangEasy.Detokenizing.Test.csproj", "{283A8CDE-C777-48C8-B2D7-CC05C83E34A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DangEasy.Detokenizing.Test", "DangEasy.Detokenizing.Test\DangEasy.Detokenizing.Test.csproj", "{283A8CDE-C777-48C8-B2D7-CC05C83E34A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.App", "Example.App\Example.App.csproj", "{527A5C63-A4E8-447C-8F6F-438B794AD31B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{44F79A5B-F41D-46F8-A97F-B3FB33C97C6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +24,18 @@ Global
 		{283A8CDE-C777-48C8-B2D7-CC05C83E34A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{283A8CDE-C777-48C8-B2D7-CC05C83E34A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{283A8CDE-C777-48C8-B2D7-CC05C83E34A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527A5C63-A4E8-447C-8F6F-438B794AD31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527A5C63-A4E8-447C-8F6F-438B794AD31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527A5C63-A4E8-447C-8F6F-438B794AD31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527A5C63-A4E8-447C-8F6F-438B794AD31B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{527A5C63-A4E8-447C-8F6F-438B794AD31B} = {44F79A5B-F41D-46F8-A97F-B3FB33C97C6A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A3CE27E-D7E3-431C-BC04-4453E65BFCF3}
 	EndGlobalSection
 EndGlobal
